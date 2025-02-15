@@ -8,8 +8,7 @@ featured: true
 draft: false
 tags:
   - general
-description:
-  Hello Universe!
+description: Hello Universe!
 ---
 
 Hello Universe!

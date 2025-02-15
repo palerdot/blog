@@ -7,7 +7,6 @@ I'm Arun Kumar, from Tamil Nadu, India. I'm a programmer primarily working with 
 
 This blog is my personal space to jot down some of my thoughts.
 
-
 <div>
   <img src="/assets/dev.svg" class="sm:w-1/2 mx-auto" alt="coding dev illustration">
 </div>
