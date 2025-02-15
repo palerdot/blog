@@ -8,8 +8,8 @@ import { SITE } from "./src/config";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://palerdot.in",
-  base: "/blog",
+  site: "https://palerdot.in/blog",
+  // base: "/blog",
   integrations: [
     tailwind({
       applyBaseStyles: false,
