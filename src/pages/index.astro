@@ -75,7 +75,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
             <ul>
               {featuredPosts.map(({ data, id }) => (
                 <Card
-                  href={`/posts/${id}/`}
+                  href={`${import.meta.env.BASE_URL}/posts/${id}/`}
                   frontmatter={data}
                   secHeading={false}
                 />
