@@ -17,7 +17,7 @@ export interface Props {
 const { post, posts } = Astro.props;
 
 const {
-  title,
+  title: titleText,
   author,
   description,
   ogImage,
@@ -26,7 +26,11 @@ const {
   modDatetime,
   tags,
   editPost,
+  draft,
 } = post.data;
+
+const titlePrefix = import.meta.env.DEV && draft ? "[DRAFT] " : "";
+const title = `${titlePrefix}${titleText}`;
 
 const { Content } = await render(post);
 
@@ -121,7 +125,7 @@ const nextPost =
       {
         prevPost && (
           <a
-            href={`/posts/${prevPost.id}`}
+            href={`${import.meta.env.BASE_URL}/posts/${prevPost.id}`}
             class="flex w-full gap-1 hover:opacity-75"
           >
             <svg
@@ -149,7 +153,7 @@ const nextPost =
       {
         nextPost && (
           <a
-            href={`/posts/${nextPost.id}`}
+            href={`${import.meta.env.BASE_URL}/posts/${nextPost.id}`}
             class="flex w-full justify-end gap-1 text-right hover:opacity-75 sm:col-start-2"
           >
             <div>
