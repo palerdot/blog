@@ -5,7 +5,7 @@ modDatetime: 2024-02-16T15:14:00Z
 title: react-d3-speedometer v3 released
 slug: react-d3-speedometer-v3
 featured: true
-draft: true
+draft: false
 tags:
   - general
   - programming
