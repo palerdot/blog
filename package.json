@@ -1,6 +1,6 @@
 {
-  "name": "extinct-equinox",
-  "version": "4.8.0",
+  "name": "palerdot-blog",
+  "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
